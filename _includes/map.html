@@ -1,0 +1,19 @@
+<div class="map" id="map-container">
+</div>
+<script type="text/javascript">
+var map = new AMap.Map('map-container',{
+    resizeEnable: true,
+    scrollWheel: false,
+    zoom: 14,
+    center: [104.054747, 30.557903]
+});
+var marker = new AMap.Marker({
+    position: [104.054747, 30.557903]
+});
+marker.setMap(map);
+var info = new AMap.InfoWindow({
+    content:"邻禾里成都旗舰店",
+    offset:new AMap.Pixel(0,-28)
+})
+info.open(map,marker.getPosition())
+</script>
