@@ -7,7 +7,8 @@ $dark-grey:   #4f4f4f;
 $aux-green:   #353f33;
 $aux-purple:  #463839;
 
-$breakpoint: 48rem;
+$breakpoint: 60rem;
+$page-width: 60rem;
 
 * {
   box-sizing: border-box;
@@ -53,7 +54,7 @@ a:hover {
 
 .wrapper {
   margin: 0 auto;
-  width: 100%;
+  width: $page-width;
 }
 
 .content-wrapper {
@@ -68,7 +69,6 @@ header {
 
 .head-top {
   height: 5rem;
-  border-bottom: 1px solid $dark-camel;
 }
 
 .logo {
@@ -107,18 +107,29 @@ header {
 }
 
 .menu {
+  background-color: $light-cream;
   display: flex;
   color: $dark-camel;
   font-size: 1rem;
-  margin: .8rem 0;
+  font-weight: bold;
+  padding: .8rem 0;
 }
 
 .menu-item {
   margin: 0 .4rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $dark-camel;
+    color: $light-cream;
+  }
 }
 
 .section {
-  margin: 8rem 0 0;
+  margin: 4rem 0 0;
 }
 
 .tile {
@@ -147,7 +158,7 @@ header {
 }
 
 .tile-image {
-  height: 24rem;
+  height: 20rem;
   width: 100%;
 }
 
@@ -220,8 +231,12 @@ hr {
     justify-content: space-between;
   }
 
+  .wrapper {
+    width: 100%;
+  }
+
   .content-wrapper {
-    margin: 0 .4rem;
+    margin: 0;
   }
 
   .tile {
@@ -234,8 +249,7 @@ hr {
 
   .tile-item {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin: 4rem 0 1rem;
   }
 
   .tile-image {
