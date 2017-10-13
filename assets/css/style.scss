@@ -95,28 +95,31 @@ header {
 .social {
   display: flex;
   flex-direction: row-reverse;
+  float: right;
 }
 
 .social-item {
-  font-size: 1rem;
-  margin: 0 .2rem;
+  font-size: 1.2rem;
+  margin: -0.1rem .8rem 0 0;
 }
 
 .social-item:last-of-type {
-  margin-right: 0;
 }
 
-.menu {
+.menu-wrapper {
   background-color: $light-cream;
-  display: flex;
   color: $dark-camel;
   font-size: 1rem;
   font-weight: bold;
   padding: .8rem 0;
 }
 
+.menu {
+  display: flex;
+}
+
 .menu-item {
-  margin: 0 .4rem;
+  margin: 0 0 0 .8rem;
 
   a {
     text-decoration: none;
@@ -190,19 +193,27 @@ header {
   margin: 0 6rem;
   padding: .8rem;
   background-color: $light-cream;
-}
 
-.article-content p {
-  text-indent: 3rem;
-}
+  img {
+    max-width: 100%;
+  }
 
-.article-content p:first-of-type {
-  margin-top: 0;
+  p {
+    text-indent: 3rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }
 
 .article-category {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+#ceo {
+  width: 25rem;
 }
 
 .map {
