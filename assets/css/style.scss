@@ -72,10 +72,9 @@ header {
 }
 
 .logo {
-}
-
-.logo img {
-  height: 5rem;
+  img {
+    height: 5rem;
+  }
 }
 
 .title {
@@ -89,7 +88,7 @@ header {
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 6px;
-  margin: .8rem 0;
+  margin: 1.8rem 0;
 }
 
 .social {
@@ -112,10 +111,15 @@ header {
   font-size: 1rem;
   font-weight: bold;
   padding: .8rem 0;
+  height: 2.8rem;
 }
 
-.menu {
+.menu-list {
   display: flex;
+}
+
+.menu-dropdown {
+  display: none;
 }
 
 .menu-item {
@@ -132,7 +136,22 @@ header {
 }
 
 .section {
-  margin: 4rem 0 0;
+  margin: 1rem 0 0;
+}
+
+.block {
+  width: 100%;
+  background-color: $aux-purple;
+  color: $pure-white;
+}
+
+.block-title {
+  font-size: 1.6rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.block-content {
+  padding: .8rem;
 }
 
 .tile {
@@ -152,7 +171,7 @@ header {
 
 .tile-title {
   color: $aux-green;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   padding: 1rem;
 }
 
@@ -172,6 +191,7 @@ header {
 }
 
 .article {
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -190,15 +210,14 @@ header {
   font-size: 1.2rem;
   letter-spacing: 4px;
   line-height: 1.8rem;
-  margin: 0 6rem;
   padding: .8rem;
-  background-color: $light-cream;
 
   img {
     max-width: 100%;
   }
 
   p {
+    background-color: $light-cream;
     text-indent: 3rem;
 
     &:first-of-type {
@@ -237,9 +256,14 @@ hr {
     margin: 0;
   }
 
-  .menu {
-    width: 100%;
-    justify-content: space-between;
+  .menu-dropdown {
+    display: block;
+    margin-top: -0.3rem;
+    padding: 0 0 0 .4rem;
+  }
+
+  .menu-list {
+    display: none;
   }
 
   .wrapper {
@@ -255,12 +279,12 @@ hr {
   }
 
   .section {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .tile-item {
     width: 100%;
-    margin: 4rem 0 1rem;
+    margin: 1rem 0 1rem;
   }
 
   .tile-image {
@@ -269,6 +293,7 @@ hr {
 
   .article-content {
     margin: 0;
+    padding: .4rem 0;
   }
 
   .map {
