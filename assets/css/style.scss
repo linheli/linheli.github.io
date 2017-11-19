@@ -29,13 +29,16 @@ html {
 body {
   background-color: $pure-white;
   color: $dark-grey;
-  font-family: Georgia, "Times New Roman", "STSong", "SimSun", "Hiragino Sans GB", "Microsoft YaHei", serif;
+  font-family: "Crimson Text", Georgia, "STSong", "SimSun", "Hiragino Sans GB", "Microsoft YaHei", serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   margin: 0;
   text-align: center;
   word-wrap: break-word;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 body ::selection {

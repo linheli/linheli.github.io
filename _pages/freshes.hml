@@ -1,0 +1,15 @@
+---
+layout: page
+title: "生鲜"
+permalink: /freshes.html
+---
+
+<div class="section article" id="freshes">
+  <div class="article-title">
+    生鲜
+  </div>
+  <div class="article-content">
+    <img src="/assets/images/fresh-1.jpg" alt="fresh-1">
+    <img src="/assets/images/fresh-2.jpg" alt="fresh-2">
+  </div>
+</div>

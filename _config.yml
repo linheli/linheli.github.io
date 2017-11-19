@@ -11,3 +11,14 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
